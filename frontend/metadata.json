@@ -1,0 +1,5 @@
+{
+  "name": "ActuSpec",
+  "description": "Premium actuator diagnostics and commissioning console for Belimo Smart Actuators.",
+  "requestFramePermissions": []
+}

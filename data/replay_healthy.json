@@ -1,0 +1,2252 @@
+[
+  {
+    "_time": "2026-03-19T10:00:00.000Z",
+    "feedback_position_%": 0.0,
+    "setpoint_position_%": 0.15,
+    "motor_torque_Nmm": 83.2,
+    "internal_temperature_deg_C": 28.04,
+    "power_W": 1.16,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:00.150Z",
+    "feedback_position_%": 0.81,
+    "setpoint_position_%": 0.29,
+    "motor_torque_Nmm": 89.2,
+    "internal_temperature_deg_C": 28.05,
+    "power_W": 1.401,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:00.300Z",
+    "feedback_position_%": 1.61,
+    "setpoint_position_%": 1.76,
+    "motor_torque_Nmm": 83.7,
+    "internal_temperature_deg_C": 28.07,
+    "power_W": 1.211,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:00.450Z",
+    "feedback_position_%": 2.42,
+    "setpoint_position_%": 3.07,
+    "motor_torque_Nmm": 93.5,
+    "internal_temperature_deg_C": 28.13,
+    "power_W": 1.37,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:00.600Z",
+    "feedback_position_%": 3.23,
+    "setpoint_position_%": 3.28,
+    "motor_torque_Nmm": 85.8,
+    "internal_temperature_deg_C": 28.06,
+    "power_W": 1.257,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:00.750Z",
+    "feedback_position_%": 4.03,
+    "setpoint_position_%": 4.08,
+    "motor_torque_Nmm": 76.9,
+    "internal_temperature_deg_C": 28.0,
+    "power_W": 1.222,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:00.900Z",
+    "feedback_position_%": 4.84,
+    "setpoint_position_%": 4.0,
+    "motor_torque_Nmm": 87.3,
+    "internal_temperature_deg_C": 28.1,
+    "power_W": 1.202,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:01.050Z",
+    "feedback_position_%": 5.65,
+    "setpoint_position_%": 4.85,
+    "motor_torque_Nmm": 86.2,
+    "internal_temperature_deg_C": 28.22,
+    "power_W": 1.449,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:01.200Z",
+    "feedback_position_%": 6.45,
+    "setpoint_position_%": 4.77,
+    "motor_torque_Nmm": 90.2,
+    "internal_temperature_deg_C": 28.03,
+    "power_W": 1.405,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:01.350Z",
+    "feedback_position_%": 7.26,
+    "setpoint_position_%": 9.36,
+    "motor_torque_Nmm": 88.1,
+    "internal_temperature_deg_C": 27.95,
+    "power_W": 1.332,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:01.500Z",
+    "feedback_position_%": 8.06,
+    "setpoint_position_%": 6.57,
+    "motor_torque_Nmm": 85.2,
+    "internal_temperature_deg_C": 28.16,
+    "power_W": 1.275,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:01.650Z",
+    "feedback_position_%": 8.87,
+    "setpoint_position_%": 8.04,
+    "motor_torque_Nmm": 81.2,
+    "internal_temperature_deg_C": 28.04,
+    "power_W": 1.233,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:01.800Z",
+    "feedback_position_%": 9.68,
+    "setpoint_position_%": 8.82,
+    "motor_torque_Nmm": 85.7,
+    "internal_temperature_deg_C": 27.84,
+    "power_W": 1.311,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:01.950Z",
+    "feedback_position_%": 10.48,
+    "setpoint_position_%": 11.56,
+    "motor_torque_Nmm": 83.4,
+    "internal_temperature_deg_C": 28.15,
+    "power_W": 1.284,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:02.100Z",
+    "feedback_position_%": 11.29,
+    "setpoint_position_%": 10.94,
+    "motor_torque_Nmm": 84.9,
+    "internal_temperature_deg_C": 28.01,
+    "power_W": 1.301,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:02.250Z",
+    "feedback_position_%": 12.1,
+    "setpoint_position_%": 13.59,
+    "motor_torque_Nmm": 89.9,
+    "internal_temperature_deg_C": 28.06,
+    "power_W": 1.353,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:02.400Z",
+    "feedback_position_%": 12.9,
+    "setpoint_position_%": 12.1,
+    "motor_torque_Nmm": 94.6,
+    "internal_temperature_deg_C": 28.11,
+    "power_W": 1.409,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:02.550Z",
+    "feedback_position_%": 13.71,
+    "setpoint_position_%": 14.04,
+    "motor_torque_Nmm": 89.8,
+    "internal_temperature_deg_C": 28.1,
+    "power_W": 1.34,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:02.700Z",
+    "feedback_position_%": 14.52,
+    "setpoint_position_%": 13.51,
+    "motor_torque_Nmm": 83.8,
+    "internal_temperature_deg_C": 28.16,
+    "power_W": 1.248,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:02.850Z",
+    "feedback_position_%": 15.32,
+    "setpoint_position_%": 17.9,
+    "motor_torque_Nmm": 90.7,
+    "internal_temperature_deg_C": 28.05,
+    "power_W": 1.418,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:03.000Z",
+    "feedback_position_%": 16.13,
+    "setpoint_position_%": 14.7,
+    "motor_torque_Nmm": 94.1,
+    "internal_temperature_deg_C": 28.15,
+    "power_W": 1.441,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:03.150Z",
+    "feedback_position_%": 16.94,
+    "setpoint_position_%": 17.31,
+    "motor_torque_Nmm": 87.2,
+    "internal_temperature_deg_C": 28.08,
+    "power_W": 1.161,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:03.300Z",
+    "feedback_position_%": 17.74,
+    "setpoint_position_%": 18.5,
+    "motor_torque_Nmm": 89.4,
+    "internal_temperature_deg_C": 28.18,
+    "power_W": 1.374,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:03.450Z",
+    "feedback_position_%": 18.55,
+    "setpoint_position_%": 19.04,
+    "motor_torque_Nmm": 90.3,
+    "internal_temperature_deg_C": 28.17,
+    "power_W": 1.364,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:03.600Z",
+    "feedback_position_%": 19.35,
+    "setpoint_position_%": 19.13,
+    "motor_torque_Nmm": 87.4,
+    "internal_temperature_deg_C": 28.02,
+    "power_W": 1.311,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:03.750Z",
+    "feedback_position_%": 20.16,
+    "setpoint_position_%": 20.01,
+    "motor_torque_Nmm": 93.5,
+    "internal_temperature_deg_C": 28.23,
+    "power_W": 1.383,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:03.900Z",
+    "feedback_position_%": 20.97,
+    "setpoint_position_%": 21.02,
+    "motor_torque_Nmm": 90.7,
+    "internal_temperature_deg_C": 28.07,
+    "power_W": 1.417,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:04.050Z",
+    "feedback_position_%": 21.77,
+    "setpoint_position_%": 21.6,
+    "motor_torque_Nmm": 93.2,
+    "internal_temperature_deg_C": 28.21,
+    "power_W": 1.445,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:04.200Z",
+    "feedback_position_%": 22.58,
+    "setpoint_position_%": 23.74,
+    "motor_torque_Nmm": 88.2,
+    "internal_temperature_deg_C": 28.17,
+    "power_W": 1.285,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:04.350Z",
+    "feedback_position_%": 23.39,
+    "setpoint_position_%": 26.04,
+    "motor_torque_Nmm": 90.3,
+    "internal_temperature_deg_C": 28.32,
+    "power_W": 1.375,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:04.500Z",
+    "feedback_position_%": 24.19,
+    "setpoint_position_%": 23.52,
+    "motor_torque_Nmm": 95.2,
+    "internal_temperature_deg_C": 28.12,
+    "power_W": 1.38,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:04.650Z",
+    "feedback_position_%": 25.0,
+    "setpoint_position_%": 23.36,
+    "motor_torque_Nmm": 91.1,
+    "internal_temperature_deg_C": 28.11,
+    "power_W": 1.298,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:04.800Z",
+    "feedback_position_%": 25.81,
+    "setpoint_position_%": 25.7,
+    "motor_torque_Nmm": 99.8,
+    "internal_temperature_deg_C": 28.15,
+    "power_W": 1.465,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:04.950Z",
+    "feedback_position_%": 26.61,
+    "setpoint_position_%": 29.71,
+    "motor_torque_Nmm": 91.5,
+    "internal_temperature_deg_C": 28.13,
+    "power_W": 1.416,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:05.100Z",
+    "feedback_position_%": 27.42,
+    "setpoint_position_%": 26.45,
+    "motor_torque_Nmm": 94.3,
+    "internal_temperature_deg_C": 28.24,
+    "power_W": 1.462,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:05.250Z",
+    "feedback_position_%": 28.23,
+    "setpoint_position_%": 30.19,
+    "motor_torque_Nmm": 97.4,
+    "internal_temperature_deg_C": 28.01,
+    "power_W": 1.486,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:05.400Z",
+    "feedback_position_%": 29.03,
+    "setpoint_position_%": 31.05,
+    "motor_torque_Nmm": 88.2,
+    "internal_temperature_deg_C": 28.07,
+    "power_W": 1.359,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:05.550Z",
+    "feedback_position_%": 29.84,
+    "setpoint_position_%": 29.17,
+    "motor_torque_Nmm": 87.0,
+    "internal_temperature_deg_C": 28.07,
+    "power_W": 1.332,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:05.700Z",
+    "feedback_position_%": 30.65,
+    "setpoint_position_%": 31.33,
+    "motor_torque_Nmm": 88.2,
+    "internal_temperature_deg_C": 28.28,
+    "power_W": 1.291,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:05.850Z",
+    "feedback_position_%": 31.45,
+    "setpoint_position_%": 33.41,
+    "motor_torque_Nmm": 99.6,
+    "internal_temperature_deg_C": 28.36,
+    "power_W": 1.515,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:06.000Z",
+    "feedback_position_%": 32.26,
+    "setpoint_position_%": 31.8,
+    "motor_torque_Nmm": 92.5,
+    "internal_temperature_deg_C": 28.18,
+    "power_W": 1.428,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:06.150Z",
+    "feedback_position_%": 33.06,
+    "setpoint_position_%": 32.82,
+    "motor_torque_Nmm": 105.2,
+    "internal_temperature_deg_C": 28.18,
+    "power_W": 1.615,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:06.300Z",
+    "feedback_position_%": 33.87,
+    "setpoint_position_%": 33.17,
+    "motor_torque_Nmm": 92.9,
+    "internal_temperature_deg_C": 28.21,
+    "power_W": 1.452,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:06.450Z",
+    "feedback_position_%": 34.68,
+    "setpoint_position_%": 33.46,
+    "motor_torque_Nmm": 96.0,
+    "internal_temperature_deg_C": 28.32,
+    "power_W": 1.476,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:06.600Z",
+    "feedback_position_%": 35.48,
+    "setpoint_position_%": 34.7,
+    "motor_torque_Nmm": 101.6,
+    "internal_temperature_deg_C": 28.12,
+    "power_W": 1.542,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:06.750Z",
+    "feedback_position_%": 36.29,
+    "setpoint_position_%": 34.82,
+    "motor_torque_Nmm": 103.7,
+    "internal_temperature_deg_C": 28.24,
+    "power_W": 1.608,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:06.900Z",
+    "feedback_position_%": 37.1,
+    "setpoint_position_%": 37.14,
+    "motor_torque_Nmm": 104.0,
+    "internal_temperature_deg_C": 28.32,
+    "power_W": 1.559,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:07.050Z",
+    "feedback_position_%": 37.9,
+    "setpoint_position_%": 36.98,
+    "motor_torque_Nmm": 100.8,
+    "internal_temperature_deg_C": 28.28,
+    "power_W": 1.467,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:07.200Z",
+    "feedback_position_%": 38.71,
+    "setpoint_position_%": 38.99,
+    "motor_torque_Nmm": 100.2,
+    "internal_temperature_deg_C": 28.25,
+    "power_W": 1.494,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:07.350Z",
+    "feedback_position_%": 39.52,
+    "setpoint_position_%": 37.65,
+    "motor_torque_Nmm": 98.6,
+    "internal_temperature_deg_C": 28.34,
+    "power_W": 1.441,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:07.500Z",
+    "feedback_position_%": 40.32,
+    "setpoint_position_%": 40.72,
+    "motor_torque_Nmm": 99.4,
+    "internal_temperature_deg_C": 27.97,
+    "power_W": 1.458,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:07.650Z",
+    "feedback_position_%": 41.13,
+    "setpoint_position_%": 42.13,
+    "motor_torque_Nmm": 94.2,
+    "internal_temperature_deg_C": 28.31,
+    "power_W": 1.406,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:07.800Z",
+    "feedback_position_%": 41.94,
+    "setpoint_position_%": 39.54,
+    "motor_torque_Nmm": 93.2,
+    "internal_temperature_deg_C": 28.19,
+    "power_W": 1.359,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:07.950Z",
+    "feedback_position_%": 42.74,
+    "setpoint_position_%": 43.19,
+    "motor_torque_Nmm": 96.6,
+    "internal_temperature_deg_C": 28.07,
+    "power_W": 1.434,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:08.100Z",
+    "feedback_position_%": 43.55,
+    "setpoint_position_%": 45.02,
+    "motor_torque_Nmm": 96.0,
+    "internal_temperature_deg_C": 28.31,
+    "power_W": 1.346,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:08.250Z",
+    "feedback_position_%": 44.35,
+    "setpoint_position_%": 42.9,
+    "motor_torque_Nmm": 95.0,
+    "internal_temperature_deg_C": 28.4,
+    "power_W": 1.435,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:08.400Z",
+    "feedback_position_%": 45.16,
+    "setpoint_position_%": 47.17,
+    "motor_torque_Nmm": 99.6,
+    "internal_temperature_deg_C": 28.26,
+    "power_W": 1.494,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:08.550Z",
+    "feedback_position_%": 45.97,
+    "setpoint_position_%": 46.47,
+    "motor_torque_Nmm": 100.7,
+    "internal_temperature_deg_C": 28.37,
+    "power_W": 1.47,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:08.700Z",
+    "feedback_position_%": 46.77,
+    "setpoint_position_%": 45.93,
+    "motor_torque_Nmm": 97.3,
+    "internal_temperature_deg_C": 28.44,
+    "power_W": 1.492,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:08.850Z",
+    "feedback_position_%": 47.58,
+    "setpoint_position_%": 47.51,
+    "motor_torque_Nmm": 102.9,
+    "internal_temperature_deg_C": 28.42,
+    "power_W": 1.59,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:09.000Z",
+    "feedback_position_%": 48.39,
+    "setpoint_position_%": 49.06,
+    "motor_torque_Nmm": 92.4,
+    "internal_temperature_deg_C": 28.45,
+    "power_W": 1.306,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:09.150Z",
+    "feedback_position_%": 49.19,
+    "setpoint_position_%": 49.28,
+    "motor_torque_Nmm": 96.2,
+    "internal_temperature_deg_C": 28.37,
+    "power_W": 1.405,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:09.300Z",
+    "feedback_position_%": 50.0,
+    "setpoint_position_%": 50.65,
+    "motor_torque_Nmm": 94.1,
+    "internal_temperature_deg_C": 28.31,
+    "power_W": 1.374,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:09.450Z",
+    "feedback_position_%": 50.81,
+    "setpoint_position_%": 49.7,
+    "motor_torque_Nmm": 89.5,
+    "internal_temperature_deg_C": 28.14,
+    "power_W": 1.296,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:09.600Z",
+    "feedback_position_%": 51.61,
+    "setpoint_position_%": 51.82,
+    "motor_torque_Nmm": 96.7,
+    "internal_temperature_deg_C": 28.28,
+    "power_W": 1.491,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:09.750Z",
+    "feedback_position_%": 52.42,
+    "setpoint_position_%": 50.72,
+    "motor_torque_Nmm": 96.5,
+    "internal_temperature_deg_C": 28.23,
+    "power_W": 1.437,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:09.900Z",
+    "feedback_position_%": 53.23,
+    "setpoint_position_%": 53.09,
+    "motor_torque_Nmm": 103.0,
+    "internal_temperature_deg_C": 28.54,
+    "power_W": 1.531,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:10.050Z",
+    "feedback_position_%": 54.03,
+    "setpoint_position_%": 52.95,
+    "motor_torque_Nmm": 99.4,
+    "internal_temperature_deg_C": 28.31,
+    "power_W": 1.391,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:10.200Z",
+    "feedback_position_%": 54.84,
+    "setpoint_position_%": 53.96,
+    "motor_torque_Nmm": 92.7,
+    "internal_temperature_deg_C": 28.34,
+    "power_W": 1.423,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:10.350Z",
+    "feedback_position_%": 55.65,
+    "setpoint_position_%": 57.13,
+    "motor_torque_Nmm": 104.2,
+    "internal_temperature_deg_C": 28.39,
+    "power_W": 1.501,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:10.500Z",
+    "feedback_position_%": 56.45,
+    "setpoint_position_%": 57.76,
+    "motor_torque_Nmm": 101.6,
+    "internal_temperature_deg_C": 28.34,
+    "power_W": 1.527,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:10.650Z",
+    "feedback_position_%": 57.26,
+    "setpoint_position_%": 57.99,
+    "motor_torque_Nmm": 98.9,
+    "internal_temperature_deg_C": 28.51,
+    "power_W": 1.498,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:10.800Z",
+    "feedback_position_%": 58.06,
+    "setpoint_position_%": 56.75,
+    "motor_torque_Nmm": 95.6,
+    "internal_temperature_deg_C": 28.28,
+    "power_W": 1.502,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:10.950Z",
+    "feedback_position_%": 58.87,
+    "setpoint_position_%": 58.49,
+    "motor_torque_Nmm": 92.6,
+    "internal_temperature_deg_C": 28.37,
+    "power_W": 1.323,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:11.100Z",
+    "feedback_position_%": 59.68,
+    "setpoint_position_%": 61.13,
+    "motor_torque_Nmm": 94.8,
+    "internal_temperature_deg_C": 28.28,
+    "power_W": 1.271,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:11.250Z",
+    "feedback_position_%": 60.48,
+    "setpoint_position_%": 60.65,
+    "motor_torque_Nmm": 100.5,
+    "internal_temperature_deg_C": 28.23,
+    "power_W": 1.517,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:11.400Z",
+    "feedback_position_%": 61.29,
+    "setpoint_position_%": 64.07,
+    "motor_torque_Nmm": 103.6,
+    "internal_temperature_deg_C": 28.31,
+    "power_W": 1.644,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:11.550Z",
+    "feedback_position_%": 62.1,
+    "setpoint_position_%": 62.57,
+    "motor_torque_Nmm": 102.1,
+    "internal_temperature_deg_C": 28.37,
+    "power_W": 1.593,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:11.700Z",
+    "feedback_position_%": 62.9,
+    "setpoint_position_%": 63.13,
+    "motor_torque_Nmm": 93.8,
+    "internal_temperature_deg_C": 28.33,
+    "power_W": 1.418,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:11.850Z",
+    "feedback_position_%": 63.71,
+    "setpoint_position_%": 63.34,
+    "motor_torque_Nmm": 91.2,
+    "internal_temperature_deg_C": 28.31,
+    "power_W": 1.343,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:12.000Z",
+    "feedback_position_%": 64.52,
+    "setpoint_position_%": 64.68,
+    "motor_torque_Nmm": 96.0,
+    "internal_temperature_deg_C": 28.24,
+    "power_W": 1.481,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:12.150Z",
+    "feedback_position_%": 65.32,
+    "setpoint_position_%": 65.14,
+    "motor_torque_Nmm": 88.2,
+    "internal_temperature_deg_C": 28.38,
+    "power_W": 1.275,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:12.300Z",
+    "feedback_position_%": 66.13,
+    "setpoint_position_%": 66.98,
+    "motor_torque_Nmm": 96.4,
+    "internal_temperature_deg_C": 28.24,
+    "power_W": 1.47,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:12.450Z",
+    "feedback_position_%": 66.94,
+    "setpoint_position_%": 68.08,
+    "motor_torque_Nmm": 94.3,
+    "internal_temperature_deg_C": 28.48,
+    "power_W": 1.44,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:12.600Z",
+    "feedback_position_%": 67.74,
+    "setpoint_position_%": 66.8,
+    "motor_torque_Nmm": 92.9,
+    "internal_temperature_deg_C": 28.41,
+    "power_W": 1.446,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:12.750Z",
+    "feedback_position_%": 68.55,
+    "setpoint_position_%": 66.95,
+    "motor_torque_Nmm": 88.1,
+    "internal_temperature_deg_C": 28.26,
+    "power_W": 1.46,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:12.900Z",
+    "feedback_position_%": 69.35,
+    "setpoint_position_%": 67.15,
+    "motor_torque_Nmm": 96.4,
+    "internal_temperature_deg_C": 28.38,
+    "power_W": 1.465,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:13.050Z",
+    "feedback_position_%": 70.16,
+    "setpoint_position_%": 70.77,
+    "motor_torque_Nmm": 92.0,
+    "internal_temperature_deg_C": 28.34,
+    "power_W": 1.354,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:13.200Z",
+    "feedback_position_%": 70.97,
+    "setpoint_position_%": 69.64,
+    "motor_torque_Nmm": 89.2,
+    "internal_temperature_deg_C": 28.46,
+    "power_W": 1.336,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:13.350Z",
+    "feedback_position_%": 71.77,
+    "setpoint_position_%": 69.19,
+    "motor_torque_Nmm": 82.1,
+    "internal_temperature_deg_C": 28.56,
+    "power_W": 1.144,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:13.500Z",
+    "feedback_position_%": 72.58,
+    "setpoint_position_%": 73.05,
+    "motor_torque_Nmm": 93.3,
+    "internal_temperature_deg_C": 28.25,
+    "power_W": 1.364,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:13.650Z",
+    "feedback_position_%": 73.39,
+    "setpoint_position_%": 76.38,
+    "motor_torque_Nmm": 100.2,
+    "internal_temperature_deg_C": 28.45,
+    "power_W": 1.483,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:13.800Z",
+    "feedback_position_%": 74.19,
+    "setpoint_position_%": 74.19,
+    "motor_torque_Nmm": 99.5,
+    "internal_temperature_deg_C": 28.43,
+    "power_W": 1.467,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:13.950Z",
+    "feedback_position_%": 75.0,
+    "setpoint_position_%": 76.01,
+    "motor_torque_Nmm": 90.8,
+    "internal_temperature_deg_C": 28.52,
+    "power_W": 1.369,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:14.100Z",
+    "feedback_position_%": 75.81,
+    "setpoint_position_%": 75.9,
+    "motor_torque_Nmm": 89.9,
+    "internal_temperature_deg_C": 28.47,
+    "power_W": 1.308,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:14.250Z",
+    "feedback_position_%": 76.61,
+    "setpoint_position_%": 76.49,
+    "motor_torque_Nmm": 93.9,
+    "internal_temperature_deg_C": 28.38,
+    "power_W": 1.465,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:14.400Z",
+    "feedback_position_%": 77.42,
+    "setpoint_position_%": 78.52,
+    "motor_torque_Nmm": 87.8,
+    "internal_temperature_deg_C": 28.43,
+    "power_W": 1.317,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:14.550Z",
+    "feedback_position_%": 78.23,
+    "setpoint_position_%": 77.88,
+    "motor_torque_Nmm": 92.7,
+    "internal_temperature_deg_C": 28.39,
+    "power_W": 1.39,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:14.700Z",
+    "feedback_position_%": 79.03,
+    "setpoint_position_%": 79.35,
+    "motor_torque_Nmm": 94.2,
+    "internal_temperature_deg_C": 28.58,
+    "power_W": 1.397,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:14.850Z",
+    "feedback_position_%": 79.84,
+    "setpoint_position_%": 80.22,
+    "motor_torque_Nmm": 95.8,
+    "internal_temperature_deg_C": 28.48,
+    "power_W": 1.445,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:15.000Z",
+    "feedback_position_%": 80.65,
+    "setpoint_position_%": 79.84,
+    "motor_torque_Nmm": 90.2,
+    "internal_temperature_deg_C": 28.67,
+    "power_W": 1.394,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:15.150Z",
+    "feedback_position_%": 81.45,
+    "setpoint_position_%": 82.64,
+    "motor_torque_Nmm": 89.4,
+    "internal_temperature_deg_C": 28.48,
+    "power_W": 1.298,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:15.300Z",
+    "feedback_position_%": 82.26,
+    "setpoint_position_%": 82.05,
+    "motor_torque_Nmm": 86.4,
+    "internal_temperature_deg_C": 28.42,
+    "power_W": 1.263,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:15.450Z",
+    "feedback_position_%": 83.06,
+    "setpoint_position_%": 82.16,
+    "motor_torque_Nmm": 86.3,
+    "internal_temperature_deg_C": 28.35,
+    "power_W": 1.279,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:15.600Z",
+    "feedback_position_%": 83.87,
+    "setpoint_position_%": 84.51,
+    "motor_torque_Nmm": 88.4,
+    "internal_temperature_deg_C": 28.32,
+    "power_W": 1.258,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:15.750Z",
+    "feedback_position_%": 84.68,
+    "setpoint_position_%": 83.6,
+    "motor_torque_Nmm": 90.4,
+    "internal_temperature_deg_C": 28.35,
+    "power_W": 1.315,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:15.900Z",
+    "feedback_position_%": 85.48,
+    "setpoint_position_%": 85.52,
+    "motor_torque_Nmm": 92.3,
+    "internal_temperature_deg_C": 28.54,
+    "power_W": 1.36,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:16.050Z",
+    "feedback_position_%": 86.29,
+    "setpoint_position_%": 86.28,
+    "motor_torque_Nmm": 85.0,
+    "internal_temperature_deg_C": 28.57,
+    "power_W": 1.319,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:16.200Z",
+    "feedback_position_%": 87.1,
+    "setpoint_position_%": 88.4,
+    "motor_torque_Nmm": 93.9,
+    "internal_temperature_deg_C": 28.36,
+    "power_W": 1.421,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:16.350Z",
+    "feedback_position_%": 87.9,
+    "setpoint_position_%": 88.47,
+    "motor_torque_Nmm": 86.5,
+    "internal_temperature_deg_C": 28.61,
+    "power_W": 1.307,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:16.500Z",
+    "feedback_position_%": 88.71,
+    "setpoint_position_%": 88.68,
+    "motor_torque_Nmm": 87.1,
+    "internal_temperature_deg_C": 28.48,
+    "power_W": 1.349,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:16.650Z",
+    "feedback_position_%": 89.52,
+    "setpoint_position_%": 90.5,
+    "motor_torque_Nmm": 83.9,
+    "internal_temperature_deg_C": 28.55,
+    "power_W": 1.251,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:16.800Z",
+    "feedback_position_%": 90.32,
+    "setpoint_position_%": 91.99,
+    "motor_torque_Nmm": 76.8,
+    "internal_temperature_deg_C": 28.7,
+    "power_W": 1.171,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:16.950Z",
+    "feedback_position_%": 91.13,
+    "setpoint_position_%": 91.8,
+    "motor_torque_Nmm": 89.7,
+    "internal_temperature_deg_C": 28.63,
+    "power_W": 1.34,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:17.100Z",
+    "feedback_position_%": 91.94,
+    "setpoint_position_%": 91.95,
+    "motor_torque_Nmm": 88.7,
+    "internal_temperature_deg_C": 28.52,
+    "power_W": 1.344,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:17.250Z",
+    "feedback_position_%": 92.74,
+    "setpoint_position_%": 91.17,
+    "motor_torque_Nmm": 84.3,
+    "internal_temperature_deg_C": 28.47,
+    "power_W": 1.235,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:17.400Z",
+    "feedback_position_%": 93.55,
+    "setpoint_position_%": 92.27,
+    "motor_torque_Nmm": 85.3,
+    "internal_temperature_deg_C": 28.34,
+    "power_W": 1.157,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:17.550Z",
+    "feedback_position_%": 94.35,
+    "setpoint_position_%": 93.99,
+    "motor_torque_Nmm": 86.7,
+    "internal_temperature_deg_C": 28.49,
+    "power_W": 1.294,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:17.700Z",
+    "feedback_position_%": 95.16,
+    "setpoint_position_%": 94.43,
+    "motor_torque_Nmm": 78.0,
+    "internal_temperature_deg_C": 28.55,
+    "power_W": 1.241,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:17.850Z",
+    "feedback_position_%": 95.97,
+    "setpoint_position_%": 95.74,
+    "motor_torque_Nmm": 81.8,
+    "internal_temperature_deg_C": 28.47,
+    "power_W": 1.273,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:18.000Z",
+    "feedback_position_%": 96.77,
+    "setpoint_position_%": 96.84,
+    "motor_torque_Nmm": 86.7,
+    "internal_temperature_deg_C": 28.57,
+    "power_W": 1.349,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:18.150Z",
+    "feedback_position_%": 97.58,
+    "setpoint_position_%": 98.22,
+    "motor_torque_Nmm": 78.1,
+    "internal_temperature_deg_C": 28.59,
+    "power_W": 1.234,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:18.300Z",
+    "feedback_position_%": 98.39,
+    "setpoint_position_%": 98.3,
+    "motor_torque_Nmm": 83.9,
+    "internal_temperature_deg_C": 28.57,
+    "power_W": 1.263,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:18.450Z",
+    "feedback_position_%": 99.19,
+    "setpoint_position_%": 99.78,
+    "motor_torque_Nmm": 77.0,
+    "internal_temperature_deg_C": 28.53,
+    "power_W": 1.164,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:18.600Z",
+    "feedback_position_%": 100.0,
+    "setpoint_position_%": 100.0,
+    "motor_torque_Nmm": 83.9,
+    "internal_temperature_deg_C": 28.61,
+    "power_W": 1.227,
+    "rotation_direction": 1
+  },
+  {
+    "_time": "2026-03-19T10:00:18.750Z",
+    "feedback_position_%": 100.0,
+    "setpoint_position_%": 97.63,
+    "motor_torque_Nmm": 81.9,
+    "internal_temperature_deg_C": 28.65,
+    "power_W": 1.212,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:18.900Z",
+    "feedback_position_%": 99.19,
+    "setpoint_position_%": 98.07,
+    "motor_torque_Nmm": 75.9,
+    "internal_temperature_deg_C": 28.5,
+    "power_W": 1.17,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:19.050Z",
+    "feedback_position_%": 98.39,
+    "setpoint_position_%": 98.21,
+    "motor_torque_Nmm": 87.4,
+    "internal_temperature_deg_C": 28.75,
+    "power_W": 1.371,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:19.200Z",
+    "feedback_position_%": 97.58,
+    "setpoint_position_%": 96.13,
+    "motor_torque_Nmm": 80.2,
+    "internal_temperature_deg_C": 28.61,
+    "power_W": 1.196,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:19.350Z",
+    "feedback_position_%": 96.77,
+    "setpoint_position_%": 97.49,
+    "motor_torque_Nmm": 80.3,
+    "internal_temperature_deg_C": 28.62,
+    "power_W": 1.182,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:19.500Z",
+    "feedback_position_%": 95.97,
+    "setpoint_position_%": 97.8,
+    "motor_torque_Nmm": 84.7,
+    "internal_temperature_deg_C": 28.7,
+    "power_W": 1.27,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:19.650Z",
+    "feedback_position_%": 95.16,
+    "setpoint_position_%": 96.62,
+    "motor_torque_Nmm": 88.9,
+    "internal_temperature_deg_C": 28.65,
+    "power_W": 1.363,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:19.800Z",
+    "feedback_position_%": 94.35,
+    "setpoint_position_%": 94.1,
+    "motor_torque_Nmm": 80.6,
+    "internal_temperature_deg_C": 28.73,
+    "power_W": 1.137,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:19.950Z",
+    "feedback_position_%": 93.55,
+    "setpoint_position_%": 95.34,
+    "motor_torque_Nmm": 85.3,
+    "internal_temperature_deg_C": 28.67,
+    "power_W": 1.164,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:20.100Z",
+    "feedback_position_%": 92.74,
+    "setpoint_position_%": 92.92,
+    "motor_torque_Nmm": 87.1,
+    "internal_temperature_deg_C": 28.58,
+    "power_W": 1.279,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:20.250Z",
+    "feedback_position_%": 91.94,
+    "setpoint_position_%": 91.53,
+    "motor_torque_Nmm": 88.5,
+    "internal_temperature_deg_C": 28.69,
+    "power_W": 1.267,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:20.400Z",
+    "feedback_position_%": 91.13,
+    "setpoint_position_%": 90.39,
+    "motor_torque_Nmm": 86.8,
+    "internal_temperature_deg_C": 28.54,
+    "power_W": 1.277,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:20.550Z",
+    "feedback_position_%": 90.32,
+    "setpoint_position_%": 89.96,
+    "motor_torque_Nmm": 85.0,
+    "internal_temperature_deg_C": 28.67,
+    "power_W": 1.268,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:20.700Z",
+    "feedback_position_%": 89.52,
+    "setpoint_position_%": 89.05,
+    "motor_torque_Nmm": 83.5,
+    "internal_temperature_deg_C": 28.66,
+    "power_W": 1.23,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:20.850Z",
+    "feedback_position_%": 88.71,
+    "setpoint_position_%": 88.91,
+    "motor_torque_Nmm": 87.6,
+    "internal_temperature_deg_C": 28.65,
+    "power_W": 1.386,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:21.000Z",
+    "feedback_position_%": 87.9,
+    "setpoint_position_%": 88.1,
+    "motor_torque_Nmm": 83.3,
+    "internal_temperature_deg_C": 28.66,
+    "power_W": 1.265,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:21.150Z",
+    "feedback_position_%": 87.1,
+    "setpoint_position_%": 87.1,
+    "motor_torque_Nmm": 76.2,
+    "internal_temperature_deg_C": 28.49,
+    "power_W": 1.158,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:21.300Z",
+    "feedback_position_%": 86.29,
+    "setpoint_position_%": 86.81,
+    "motor_torque_Nmm": 90.0,
+    "internal_temperature_deg_C": 28.63,
+    "power_W": 1.381,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:21.450Z",
+    "feedback_position_%": 85.48,
+    "setpoint_position_%": 86.91,
+    "motor_torque_Nmm": 92.2,
+    "internal_temperature_deg_C": 28.7,
+    "power_W": 1.326,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:21.600Z",
+    "feedback_position_%": 84.68,
+    "setpoint_position_%": 85.82,
+    "motor_torque_Nmm": 79.5,
+    "internal_temperature_deg_C": 28.71,
+    "power_W": 1.244,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:21.750Z",
+    "feedback_position_%": 83.87,
+    "setpoint_position_%": 82.09,
+    "motor_torque_Nmm": 85.2,
+    "internal_temperature_deg_C": 28.6,
+    "power_W": 1.275,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:21.900Z",
+    "feedback_position_%": 83.06,
+    "setpoint_position_%": 80.0,
+    "motor_torque_Nmm": 92.1,
+    "internal_temperature_deg_C": 28.83,
+    "power_W": 1.415,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:22.050Z",
+    "feedback_position_%": 82.26,
+    "setpoint_position_%": 83.38,
+    "motor_torque_Nmm": 98.2,
+    "internal_temperature_deg_C": 28.62,
+    "power_W": 1.419,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:22.200Z",
+    "feedback_position_%": 81.45,
+    "setpoint_position_%": 79.81,
+    "motor_torque_Nmm": 90.3,
+    "internal_temperature_deg_C": 28.81,
+    "power_W": 1.277,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:22.350Z",
+    "feedback_position_%": 80.65,
+    "setpoint_position_%": 80.38,
+    "motor_torque_Nmm": 87.7,
+    "internal_temperature_deg_C": 28.76,
+    "power_W": 1.356,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:22.500Z",
+    "feedback_position_%": 79.84,
+    "setpoint_position_%": 78.43,
+    "motor_torque_Nmm": 90.1,
+    "internal_temperature_deg_C": 28.66,
+    "power_W": 1.371,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:22.650Z",
+    "feedback_position_%": 79.03,
+    "setpoint_position_%": 76.87,
+    "motor_torque_Nmm": 96.7,
+    "internal_temperature_deg_C": 28.91,
+    "power_W": 1.405,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:22.800Z",
+    "feedback_position_%": 78.23,
+    "setpoint_position_%": 78.88,
+    "motor_torque_Nmm": 88.9,
+    "internal_temperature_deg_C": 28.61,
+    "power_W": 1.29,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:22.950Z",
+    "feedback_position_%": 77.42,
+    "setpoint_position_%": 78.33,
+    "motor_torque_Nmm": 88.6,
+    "internal_temperature_deg_C": 28.83,
+    "power_W": 1.385,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:23.100Z",
+    "feedback_position_%": 76.61,
+    "setpoint_position_%": 75.92,
+    "motor_torque_Nmm": 90.1,
+    "internal_temperature_deg_C": 28.84,
+    "power_W": 1.292,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:23.250Z",
+    "feedback_position_%": 75.81,
+    "setpoint_position_%": 72.7,
+    "motor_torque_Nmm": 88.5,
+    "internal_temperature_deg_C": 28.68,
+    "power_W": 1.41,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:23.400Z",
+    "feedback_position_%": 75.0,
+    "setpoint_position_%": 74.34,
+    "motor_torque_Nmm": 93.1,
+    "internal_temperature_deg_C": 28.89,
+    "power_W": 1.351,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:23.550Z",
+    "feedback_position_%": 74.19,
+    "setpoint_position_%": 74.66,
+    "motor_torque_Nmm": 99.4,
+    "internal_temperature_deg_C": 28.73,
+    "power_W": 1.522,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:23.700Z",
+    "feedback_position_%": 73.39,
+    "setpoint_position_%": 71.61,
+    "motor_torque_Nmm": 94.4,
+    "internal_temperature_deg_C": 28.79,
+    "power_W": 1.4,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:23.850Z",
+    "feedback_position_%": 72.58,
+    "setpoint_position_%": 72.8,
+    "motor_torque_Nmm": 92.4,
+    "internal_temperature_deg_C": 28.79,
+    "power_W": 1.416,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:24.000Z",
+    "feedback_position_%": 71.77,
+    "setpoint_position_%": 71.76,
+    "motor_torque_Nmm": 92.5,
+    "internal_temperature_deg_C": 28.76,
+    "power_W": 1.36,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:24.150Z",
+    "feedback_position_%": 70.97,
+    "setpoint_position_%": 71.66,
+    "motor_torque_Nmm": 87.6,
+    "internal_temperature_deg_C": 28.86,
+    "power_W": 1.306,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:24.300Z",
+    "feedback_position_%": 70.16,
+    "setpoint_position_%": 70.3,
+    "motor_torque_Nmm": 97.6,
+    "internal_temperature_deg_C": 28.86,
+    "power_W": 1.466,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:24.450Z",
+    "feedback_position_%": 69.35,
+    "setpoint_position_%": 68.19,
+    "motor_torque_Nmm": 94.0,
+    "internal_temperature_deg_C": 28.61,
+    "power_W": 1.36,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:24.600Z",
+    "feedback_position_%": 68.55,
+    "setpoint_position_%": 69.98,
+    "motor_torque_Nmm": 93.8,
+    "internal_temperature_deg_C": 28.92,
+    "power_W": 1.444,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:24.750Z",
+    "feedback_position_%": 67.74,
+    "setpoint_position_%": 67.55,
+    "motor_torque_Nmm": 107.5,
+    "internal_temperature_deg_C": 28.63,
+    "power_W": 1.587,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:24.900Z",
+    "feedback_position_%": 66.94,
+    "setpoint_position_%": 66.9,
+    "motor_torque_Nmm": 96.1,
+    "internal_temperature_deg_C": 28.9,
+    "power_W": 1.43,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:25.050Z",
+    "feedback_position_%": 66.13,
+    "setpoint_position_%": 65.01,
+    "motor_torque_Nmm": 92.1,
+    "internal_temperature_deg_C": 28.92,
+    "power_W": 1.332,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:25.200Z",
+    "feedback_position_%": 65.32,
+    "setpoint_position_%": 64.79,
+    "motor_torque_Nmm": 93.6,
+    "internal_temperature_deg_C": 28.7,
+    "power_W": 1.276,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:25.350Z",
+    "feedback_position_%": 64.52,
+    "setpoint_position_%": 63.45,
+    "motor_torque_Nmm": 100.1,
+    "internal_temperature_deg_C": 28.77,
+    "power_W": 1.491,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:25.500Z",
+    "feedback_position_%": 63.71,
+    "setpoint_position_%": 63.5,
+    "motor_torque_Nmm": 96.1,
+    "internal_temperature_deg_C": 28.71,
+    "power_W": 1.562,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:25.650Z",
+    "feedback_position_%": 62.9,
+    "setpoint_position_%": 64.96,
+    "motor_torque_Nmm": 90.0,
+    "internal_temperature_deg_C": 28.8,
+    "power_W": 1.39,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:25.800Z",
+    "feedback_position_%": 62.1,
+    "setpoint_position_%": 60.45,
+    "motor_torque_Nmm": 99.6,
+    "internal_temperature_deg_C": 28.8,
+    "power_W": 1.493,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:25.950Z",
+    "feedback_position_%": 61.29,
+    "setpoint_position_%": 59.35,
+    "motor_torque_Nmm": 93.4,
+    "internal_temperature_deg_C": 28.91,
+    "power_W": 1.388,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:26.100Z",
+    "feedback_position_%": 60.48,
+    "setpoint_position_%": 62.25,
+    "motor_torque_Nmm": 103.7,
+    "internal_temperature_deg_C": 28.97,
+    "power_W": 1.556,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:26.250Z",
+    "feedback_position_%": 59.68,
+    "setpoint_position_%": 59.43,
+    "motor_torque_Nmm": 100.6,
+    "internal_temperature_deg_C": 28.98,
+    "power_W": 1.537,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:26.400Z",
+    "feedback_position_%": 58.87,
+    "setpoint_position_%": 58.07,
+    "motor_torque_Nmm": 94.6,
+    "internal_temperature_deg_C": 28.79,
+    "power_W": 1.36,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:26.550Z",
+    "feedback_position_%": 58.06,
+    "setpoint_position_%": 59.31,
+    "motor_torque_Nmm": 101.6,
+    "internal_temperature_deg_C": 28.83,
+    "power_W": 1.58,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:26.700Z",
+    "feedback_position_%": 57.26,
+    "setpoint_position_%": 56.53,
+    "motor_torque_Nmm": 96.9,
+    "internal_temperature_deg_C": 28.69,
+    "power_W": 1.489,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:26.850Z",
+    "feedback_position_%": 56.45,
+    "setpoint_position_%": 58.64,
+    "motor_torque_Nmm": 100.1,
+    "internal_temperature_deg_C": 28.78,
+    "power_W": 1.537,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:27.000Z",
+    "feedback_position_%": 55.65,
+    "setpoint_position_%": 56.46,
+    "motor_torque_Nmm": 98.7,
+    "internal_temperature_deg_C": 28.96,
+    "power_W": 1.502,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:27.150Z",
+    "feedback_position_%": 54.84,
+    "setpoint_position_%": 54.25,
+    "motor_torque_Nmm": 93.4,
+    "internal_temperature_deg_C": 29.03,
+    "power_W": 1.403,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:27.300Z",
+    "feedback_position_%": 54.03,
+    "setpoint_position_%": 56.62,
+    "motor_torque_Nmm": 94.3,
+    "internal_temperature_deg_C": 28.75,
+    "power_W": 1.448,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:27.450Z",
+    "feedback_position_%": 53.23,
+    "setpoint_position_%": 52.5,
+    "motor_torque_Nmm": 101.0,
+    "internal_temperature_deg_C": 28.82,
+    "power_W": 1.545,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:27.600Z",
+    "feedback_position_%": 52.42,
+    "setpoint_position_%": 53.31,
+    "motor_torque_Nmm": 95.6,
+    "internal_temperature_deg_C": 28.88,
+    "power_W": 1.417,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:27.750Z",
+    "feedback_position_%": 51.61,
+    "setpoint_position_%": 51.97,
+    "motor_torque_Nmm": 95.4,
+    "internal_temperature_deg_C": 28.92,
+    "power_W": 1.402,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:27.900Z",
+    "feedback_position_%": 50.81,
+    "setpoint_position_%": 52.37,
+    "motor_torque_Nmm": 93.2,
+    "internal_temperature_deg_C": 28.82,
+    "power_W": 1.403,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:28.050Z",
+    "feedback_position_%": 50.0,
+    "setpoint_position_%": 51.87,
+    "motor_torque_Nmm": 98.7,
+    "internal_temperature_deg_C": 28.94,
+    "power_W": 1.558,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:28.200Z",
+    "feedback_position_%": 49.19,
+    "setpoint_position_%": 49.23,
+    "motor_torque_Nmm": 105.2,
+    "internal_temperature_deg_C": 28.86,
+    "power_W": 1.517,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:28.350Z",
+    "feedback_position_%": 48.39,
+    "setpoint_position_%": 47.48,
+    "motor_torque_Nmm": 92.7,
+    "internal_temperature_deg_C": 28.91,
+    "power_W": 1.317,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:28.500Z",
+    "feedback_position_%": 47.58,
+    "setpoint_position_%": 48.13,
+    "motor_torque_Nmm": 97.1,
+    "internal_temperature_deg_C": 28.97,
+    "power_W": 1.464,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:28.650Z",
+    "feedback_position_%": 46.77,
+    "setpoint_position_%": 45.96,
+    "motor_torque_Nmm": 102.6,
+    "internal_temperature_deg_C": 28.92,
+    "power_W": 1.541,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:28.800Z",
+    "feedback_position_%": 45.97,
+    "setpoint_position_%": 48.38,
+    "motor_torque_Nmm": 96.6,
+    "internal_temperature_deg_C": 28.88,
+    "power_W": 1.457,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:28.950Z",
+    "feedback_position_%": 45.16,
+    "setpoint_position_%": 45.33,
+    "motor_torque_Nmm": 98.6,
+    "internal_temperature_deg_C": 28.92,
+    "power_W": 1.492,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:29.100Z",
+    "feedback_position_%": 44.35,
+    "setpoint_position_%": 43.92,
+    "motor_torque_Nmm": 92.5,
+    "internal_temperature_deg_C": 28.93,
+    "power_W": 1.377,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:29.250Z",
+    "feedback_position_%": 43.55,
+    "setpoint_position_%": 43.77,
+    "motor_torque_Nmm": 98.4,
+    "internal_temperature_deg_C": 28.9,
+    "power_W": 1.551,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:29.400Z",
+    "feedback_position_%": 42.74,
+    "setpoint_position_%": 41.13,
+    "motor_torque_Nmm": 95.9,
+    "internal_temperature_deg_C": 28.92,
+    "power_W": 1.358,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:29.550Z",
+    "feedback_position_%": 41.94,
+    "setpoint_position_%": 40.77,
+    "motor_torque_Nmm": 100.5,
+    "internal_temperature_deg_C": 29.11,
+    "power_W": 1.466,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:29.700Z",
+    "feedback_position_%": 41.13,
+    "setpoint_position_%": 42.57,
+    "motor_torque_Nmm": 101.2,
+    "internal_temperature_deg_C": 29.01,
+    "power_W": 1.512,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:29.850Z",
+    "feedback_position_%": 40.32,
+    "setpoint_position_%": 39.53,
+    "motor_torque_Nmm": 106.7,
+    "internal_temperature_deg_C": 28.93,
+    "power_W": 1.518,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:30.000Z",
+    "feedback_position_%": 39.52,
+    "setpoint_position_%": 38.26,
+    "motor_torque_Nmm": 98.5,
+    "internal_temperature_deg_C": 29.03,
+    "power_W": 1.469,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:30.150Z",
+    "feedback_position_%": 38.71,
+    "setpoint_position_%": 39.35,
+    "motor_torque_Nmm": 97.4,
+    "internal_temperature_deg_C": 28.94,
+    "power_W": 1.544,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:30.300Z",
+    "feedback_position_%": 37.9,
+    "setpoint_position_%": 39.33,
+    "motor_torque_Nmm": 96.7,
+    "internal_temperature_deg_C": 29.09,
+    "power_W": 1.452,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:30.450Z",
+    "feedback_position_%": 37.1,
+    "setpoint_position_%": 37.96,
+    "motor_torque_Nmm": 94.4,
+    "internal_temperature_deg_C": 29.02,
+    "power_W": 1.427,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:30.600Z",
+    "feedback_position_%": 36.29,
+    "setpoint_position_%": 37.49,
+    "motor_torque_Nmm": 97.0,
+    "internal_temperature_deg_C": 28.97,
+    "power_W": 1.392,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:30.750Z",
+    "feedback_position_%": 35.48,
+    "setpoint_position_%": 34.58,
+    "motor_torque_Nmm": 94.3,
+    "internal_temperature_deg_C": 29.03,
+    "power_W": 1.383,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:30.900Z",
+    "feedback_position_%": 34.68,
+    "setpoint_position_%": 32.97,
+    "motor_torque_Nmm": 96.0,
+    "internal_temperature_deg_C": 28.84,
+    "power_W": 1.421,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:31.050Z",
+    "feedback_position_%": 33.87,
+    "setpoint_position_%": 35.67,
+    "motor_torque_Nmm": 100.4,
+    "internal_temperature_deg_C": 28.88,
+    "power_W": 1.49,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:31.200Z",
+    "feedback_position_%": 33.06,
+    "setpoint_position_%": 32.68,
+    "motor_torque_Nmm": 90.9,
+    "internal_temperature_deg_C": 28.88,
+    "power_W": 1.428,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:31.350Z",
+    "feedback_position_%": 32.26,
+    "setpoint_position_%": 31.96,
+    "motor_torque_Nmm": 99.3,
+    "internal_temperature_deg_C": 29.02,
+    "power_W": 1.517,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:31.500Z",
+    "feedback_position_%": 31.45,
+    "setpoint_position_%": 33.05,
+    "motor_torque_Nmm": 99.8,
+    "internal_temperature_deg_C": 29.19,
+    "power_W": 1.441,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:31.650Z",
+    "feedback_position_%": 30.65,
+    "setpoint_position_%": 31.31,
+    "motor_torque_Nmm": 93.8,
+    "internal_temperature_deg_C": 29.24,
+    "power_W": 1.42,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:31.800Z",
+    "feedback_position_%": 29.84,
+    "setpoint_position_%": 30.39,
+    "motor_torque_Nmm": 85.6,
+    "internal_temperature_deg_C": 29.09,
+    "power_W": 1.309,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:31.950Z",
+    "feedback_position_%": 29.03,
+    "setpoint_position_%": 31.63,
+    "motor_torque_Nmm": 91.4,
+    "internal_temperature_deg_C": 29.08,
+    "power_W": 1.428,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:32.100Z",
+    "feedback_position_%": 28.23,
+    "setpoint_position_%": 27.45,
+    "motor_torque_Nmm": 98.8,
+    "internal_temperature_deg_C": 28.85,
+    "power_W": 1.561,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:32.250Z",
+    "feedback_position_%": 27.42,
+    "setpoint_position_%": 28.53,
+    "motor_torque_Nmm": 93.3,
+    "internal_temperature_deg_C": 28.98,
+    "power_W": 1.349,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:32.400Z",
+    "feedback_position_%": 26.61,
+    "setpoint_position_%": 26.68,
+    "motor_torque_Nmm": 89.1,
+    "internal_temperature_deg_C": 28.96,
+    "power_W": 1.296,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:32.550Z",
+    "feedback_position_%": 25.81,
+    "setpoint_position_%": 26.13,
+    "motor_torque_Nmm": 90.9,
+    "internal_temperature_deg_C": 28.98,
+    "power_W": 1.3,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:32.700Z",
+    "feedback_position_%": 25.0,
+    "setpoint_position_%": 26.83,
+    "motor_torque_Nmm": 96.0,
+    "internal_temperature_deg_C": 29.03,
+    "power_W": 1.428,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:32.850Z",
+    "feedback_position_%": 24.19,
+    "setpoint_position_%": 24.8,
+    "motor_torque_Nmm": 94.5,
+    "internal_temperature_deg_C": 29.01,
+    "power_W": 1.441,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:33.000Z",
+    "feedback_position_%": 23.39,
+    "setpoint_position_%": 24.03,
+    "motor_torque_Nmm": 91.1,
+    "internal_temperature_deg_C": 28.86,
+    "power_W": 1.416,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:33.150Z",
+    "feedback_position_%": 22.58,
+    "setpoint_position_%": 23.87,
+    "motor_torque_Nmm": 90.3,
+    "internal_temperature_deg_C": 29.14,
+    "power_W": 1.351,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:33.300Z",
+    "feedback_position_%": 21.77,
+    "setpoint_position_%": 21.34,
+    "motor_torque_Nmm": 89.9,
+    "internal_temperature_deg_C": 28.96,
+    "power_W": 1.333,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:33.450Z",
+    "feedback_position_%": 20.97,
+    "setpoint_position_%": 19.96,
+    "motor_torque_Nmm": 87.5,
+    "internal_temperature_deg_C": 29.1,
+    "power_W": 1.32,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:33.600Z",
+    "feedback_position_%": 20.16,
+    "setpoint_position_%": 18.91,
+    "motor_torque_Nmm": 97.3,
+    "internal_temperature_deg_C": 29.29,
+    "power_W": 1.418,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:33.750Z",
+    "feedback_position_%": 19.35,
+    "setpoint_position_%": 17.0,
+    "motor_torque_Nmm": 89.3,
+    "internal_temperature_deg_C": 28.99,
+    "power_W": 1.444,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:33.900Z",
+    "feedback_position_%": 18.55,
+    "setpoint_position_%": 21.02,
+    "motor_torque_Nmm": 95.1,
+    "internal_temperature_deg_C": 28.84,
+    "power_W": 1.346,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:34.050Z",
+    "feedback_position_%": 17.74,
+    "setpoint_position_%": 16.42,
+    "motor_torque_Nmm": 96.0,
+    "internal_temperature_deg_C": 29.07,
+    "power_W": 1.45,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:34.200Z",
+    "feedback_position_%": 16.94,
+    "setpoint_position_%": 16.67,
+    "motor_torque_Nmm": 93.6,
+    "internal_temperature_deg_C": 29.21,
+    "power_W": 1.505,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:34.350Z",
+    "feedback_position_%": 16.13,
+    "setpoint_position_%": 15.8,
+    "motor_torque_Nmm": 87.6,
+    "internal_temperature_deg_C": 29.3,
+    "power_W": 1.314,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:34.500Z",
+    "feedback_position_%": 15.32,
+    "setpoint_position_%": 15.69,
+    "motor_torque_Nmm": 90.6,
+    "internal_temperature_deg_C": 28.99,
+    "power_W": 1.349,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:34.650Z",
+    "feedback_position_%": 14.52,
+    "setpoint_position_%": 15.5,
+    "motor_torque_Nmm": 88.5,
+    "internal_temperature_deg_C": 29.16,
+    "power_W": 1.31,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:34.800Z",
+    "feedback_position_%": 13.71,
+    "setpoint_position_%": 14.74,
+    "motor_torque_Nmm": 84.6,
+    "internal_temperature_deg_C": 29.07,
+    "power_W": 1.261,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:34.950Z",
+    "feedback_position_%": 12.9,
+    "setpoint_position_%": 12.2,
+    "motor_torque_Nmm": 89.2,
+    "internal_temperature_deg_C": 29.11,
+    "power_W": 1.407,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:35.100Z",
+    "feedback_position_%": 12.1,
+    "setpoint_position_%": 11.9,
+    "motor_torque_Nmm": 82.8,
+    "internal_temperature_deg_C": 29.39,
+    "power_W": 1.132,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:35.250Z",
+    "feedback_position_%": 11.29,
+    "setpoint_position_%": 11.63,
+    "motor_torque_Nmm": 92.0,
+    "internal_temperature_deg_C": 28.98,
+    "power_W": 1.456,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:35.400Z",
+    "feedback_position_%": 10.48,
+    "setpoint_position_%": 10.19,
+    "motor_torque_Nmm": 85.0,
+    "internal_temperature_deg_C": 29.16,
+    "power_W": 1.204,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:35.550Z",
+    "feedback_position_%": 9.68,
+    "setpoint_position_%": 11.61,
+    "motor_torque_Nmm": 87.3,
+    "internal_temperature_deg_C": 29.19,
+    "power_W": 1.296,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:35.700Z",
+    "feedback_position_%": 8.87,
+    "setpoint_position_%": 9.46,
+    "motor_torque_Nmm": 87.3,
+    "internal_temperature_deg_C": 29.26,
+    "power_W": 1.287,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:35.850Z",
+    "feedback_position_%": 8.06,
+    "setpoint_position_%": 8.95,
+    "motor_torque_Nmm": 84.7,
+    "internal_temperature_deg_C": 29.16,
+    "power_W": 1.3,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:36.000Z",
+    "feedback_position_%": 7.26,
+    "setpoint_position_%": 8.05,
+    "motor_torque_Nmm": 87.7,
+    "internal_temperature_deg_C": 29.19,
+    "power_W": 1.236,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:36.150Z",
+    "feedback_position_%": 6.45,
+    "setpoint_position_%": 7.86,
+    "motor_torque_Nmm": 83.1,
+    "internal_temperature_deg_C": 29.12,
+    "power_W": 1.27,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:36.300Z",
+    "feedback_position_%": 5.65,
+    "setpoint_position_%": 5.86,
+    "motor_torque_Nmm": 88.1,
+    "internal_temperature_deg_C": 29.19,
+    "power_W": 1.423,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:36.450Z",
+    "feedback_position_%": 4.84,
+    "setpoint_position_%": 3.28,
+    "motor_torque_Nmm": 78.9,
+    "internal_temperature_deg_C": 29.14,
+    "power_W": 1.115,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:36.600Z",
+    "feedback_position_%": 4.03,
+    "setpoint_position_%": 4.51,
+    "motor_torque_Nmm": 84.4,
+    "internal_temperature_deg_C": 29.24,
+    "power_W": 1.275,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:36.750Z",
+    "feedback_position_%": 3.23,
+    "setpoint_position_%": 2.44,
+    "motor_torque_Nmm": 91.3,
+    "internal_temperature_deg_C": 29.14,
+    "power_W": 1.336,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:36.900Z",
+    "feedback_position_%": 2.42,
+    "setpoint_position_%": 1.79,
+    "motor_torque_Nmm": 79.1,
+    "internal_temperature_deg_C": 29.22,
+    "power_W": 1.208,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:37.050Z",
+    "feedback_position_%": 1.61,
+    "setpoint_position_%": 2.32,
+    "motor_torque_Nmm": 80.0,
+    "internal_temperature_deg_C": 29.19,
+    "power_W": 1.202,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:37.200Z",
+    "feedback_position_%": 0.81,
+    "setpoint_position_%": 2.29,
+    "motor_torque_Nmm": 84.4,
+    "internal_temperature_deg_C": 29.31,
+    "power_W": 1.234,
+    "rotation_direction": 2
+  },
+  {
+    "_time": "2026-03-19T10:00:37.350Z",
+    "feedback_position_%": 0.0,
+    "setpoint_position_%": 0.03,
+    "motor_torque_Nmm": 82.7,
+    "internal_temperature_deg_C": 29.19,
+    "power_W": 1.265,
+    "rotation_direction": 2
+  }
+]

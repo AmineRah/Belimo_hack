@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python generate_replay_data.py)",
+      "Bash(python -c \"from config import *; print\\(''config OK''\\)\")",
+      "Bash(python -c \"from analyzer import *; print\\(''analyzer OK''\\)\")",
+      "Bash(python -c \"from baseline import *; print\\(''baseline OK''\\)\")",
+      "Bash(python -c \"from fallback import *; print\\(''fallback OK''\\)\")",
+      "Bash(python -c \"from charts import *; print\\(''charts OK''\\)\")",
+      "Bash(python -c \":*)",
+      "Bash(grep -n \"^def \" /c/Users/Amine/Documents/Belimo_hack/*.py)",
+      "Bash(grep -n \"load_baseline_from_file\\\\|list_scenarios\\\\|_profile_to_df\\\\|_get_client\\\\|_clean_df\" /c/Users/Amine/Documents/Belimo_hack/*.py)"
+    ]
+  }
+}

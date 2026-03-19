@@ -1,0 +1,6 @@
+streamlit
+influxdb-client
+pandas
+numpy
+scipy
+altair

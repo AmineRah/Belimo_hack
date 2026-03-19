@@ -35,22 +35,25 @@ def _get_write_api():
 
 
 def send_setpoint(setpoint: float, test_number: int = -1):
-    """Send a single setpoint command to the actuator."""
+    """Send a single setpoint command to the actuator. Raises ConnectionError if InfluxDB unreachable."""
     if not (0 <= setpoint <= 100):
         raise ValueError(f"Setpoint {setpoint} out of range. Must be 0-100.")
-    api = _get_write_api()
-    df = pd.DataFrame([{
-        "timestamp": _EPOCH,
-        "setpoint_position_%": float(setpoint),
-        "test_number": int(test_number),
-    }]).set_index("timestamp")
-    api.write(
-        bucket=INFLUX_BUCKET,
-        record=df,
-        write_precision=WritePrecision.MS,
-        data_frame_measurement_name=INFLUX_PROCESS,
-        data_frame_tag_columns=[],
-    )
+    try:
+        api = _get_write_api()
+        df = pd.DataFrame([{
+            "timestamp": _EPOCH,
+            "setpoint_position_%": float(setpoint),
+            "test_number": int(test_number),
+        }]).set_index("timestamp")
+        api.write(
+            bucket=INFLUX_BUCKET,
+            record=df,
+            write_precision=WritePrecision.MS,
+            data_frame_measurement_name=INFLUX_PROCESS,
+            data_frame_tag_columns=[],
+        )
+    except Exception as e:
+        raise ConnectionError(f"Failed to send command to InfluxDB: {e}") from e
 
 
 def run_sequence(sequence: list[float], test_number: int, delay: float = SEQ_STEP_DELAY,

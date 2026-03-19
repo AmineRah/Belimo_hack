@@ -13,11 +13,18 @@ from config import DATA_DIR, BASELINE_FILE, F_POSITION, F_TORQUE
 
 
 def load_baseline_from_file() -> pd.DataFrame:
-    """Load the healthy baseline trace from JSON."""
+    """Load the healthy baseline trace from JSON. Returns empty DataFrame if file missing."""
     path = os.path.join(DATA_DIR, BASELINE_FILE)
-    with open(path, "r") as f:
-        data = json.load(f)
-    return pd.DataFrame(data)
+    if not os.path.exists(path):
+        print(f"[baseline] Warning: {path} not found, returning empty DataFrame")
+        return pd.DataFrame()
+    try:
+        with open(path, "r") as f:
+            data = json.load(f)
+        return pd.DataFrame(data)
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"[baseline] Error reading {path}: {e}")
+        return pd.DataFrame()
 
 
 def baseline_profile_from_file() -> pd.Series:

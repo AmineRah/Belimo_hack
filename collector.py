@@ -52,23 +52,28 @@ def validate_trace(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def query_recent(range_str: str = "-5m") -> pd.DataFrame:
-    """Get all recent telemetry (for live monitor)."""
-    client = _get_client()
-    flux = f'''
+    """Get all recent telemetry (for live monitor). Returns empty DataFrame on connection error."""
+    try:
+        client = _get_client()
+        flux = f'''
 from(bucket: "{INFLUX_BUCKET}")
   |> range(start: {range_str})
   |> filter(fn: (r) => r["_measurement"] == "{INFLUX_MEASUREMENT}")
   |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
   |> sort(columns: ["_time"])
 '''
-    df = client.query_api().query_data_frame(flux, org=INFLUX_ORG)
-    return _clean_df(df)
+        df = client.query_api().query_data_frame(flux, org=INFLUX_ORG)
+        return _clean_df(df)
+    except Exception as e:
+        print(f"[collector] query_recent failed: {e}")
+        return pd.DataFrame()
 
 
 def query_by_test_number(test_number: int, range_str: str = "-24h") -> pd.DataFrame:
-    """Get telemetry for a specific test number."""
-    client = _get_client()
-    flux = f'''
+    """Get telemetry for a specific test number. Returns empty DataFrame on connection error."""
+    try:
+        client = _get_client()
+        flux = f'''
 from(bucket: "{INFLUX_BUCKET}")
   |> range(start: {range_str})
   |> filter(fn: (r) => r["_measurement"] == "{INFLUX_MEASUREMENT}")
@@ -76,19 +81,26 @@ from(bucket: "{INFLUX_BUCKET}")
   |> filter(fn: (r) => r["test_number"] == {test_number})
   |> sort(columns: ["_time"])
 '''
-    df = client.query_api().query_data_frame(flux, org=INFLUX_ORG)
-    return validate_trace(_clean_df(df))
+        df = client.query_api().query_data_frame(flux, org=INFLUX_ORG)
+        return validate_trace(_clean_df(df))
+    except Exception as e:
+        print(f"[collector] query_by_test_number({test_number}) failed: {e}")
+        return pd.DataFrame()
 
 
 def query_all_test_numbers(range_str: str = "-24h") -> pd.DataFrame:
-    """Get all telemetry in range (for fleet analysis)."""
-    client = _get_client()
-    flux = f'''
+    """Get all telemetry in range (for fleet analysis). Returns empty DataFrame on connection error."""
+    try:
+        client = _get_client()
+        flux = f'''
 from(bucket: "{INFLUX_BUCKET}")
   |> range(start: {range_str})
   |> filter(fn: (r) => r["_measurement"] == "{INFLUX_MEASUREMENT}")
   |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
   |> sort(columns: ["_time"])
 '''
-    df = client.query_api().query_data_frame(flux, org=INFLUX_ORG)
-    return _clean_df(df)
+        df = client.query_api().query_data_frame(flux, org=INFLUX_ORG)
+        return validate_trace(_clean_df(df))
+    except Exception as e:
+        print(f"[collector] query_all_test_numbers failed: {e}")
+        return pd.DataFrame()

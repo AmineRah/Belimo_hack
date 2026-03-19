@@ -335,14 +335,20 @@ with tab1:
             manual_tn = st.number_input("Test number", -1, 500, TN_DEFAULT, key="ops_tn")
             setpoint = st.slider("Setpoint (%)", 0, 100, 50, key="live_sp")
             if st.button("Send Command", key="live_send"):
-                send_setpoint(setpoint, int(manual_tn))
-                st.success(f"Sent setpoint={setpoint}% / tn={int(manual_tn)}")
+                try:
+                    send_setpoint(setpoint, int(manual_tn))
+                    st.success(f"Sent setpoint={setpoint}% / tn={int(manual_tn)}")
+                except (ConnectionError, Exception) as e:
+                    st.error(f"Command failed: {e}")
             quick = st.columns(3)
             for i, pct in enumerate([0, 50, 100]):
                 with quick[i]:
                     if st.button(f"{pct}%", key=f"q_{pct}"):
-                        send_setpoint(pct, int(manual_tn))
-                        st.info(f"→ {pct}%")
+                        try:
+                            send_setpoint(pct, int(manual_tn))
+                            st.info(f"→ {pct}%")
+                        except (ConnectionError, Exception) as e:
+                            st.error(f"Command failed: {e}")
             st.caption("Commands written to `_process`; Pi logger applies via MP-Bus.")
             panel_end()
 
@@ -404,26 +410,38 @@ with tab2:
         if is_live:
             st.caption("Tests use `test_number=999`")
             if st.button("Run Free Stroke", key="bl_free"):
-                progress = st.progress(0)
-                msg = run_live_baseline("free", lambda i, t: progress.progress(i / t))
-                st.success(msg)
+                try:
+                    progress = st.progress(0)
+                    msg = run_live_baseline("free", lambda i, t: progress.progress(i / t))
+                    st.success(msg)
+                except Exception as e:
+                    st.error(f"Baseline stroke failed. Check BELIMO-X connection. ({e})")
             if st.button("Run Loaded Stroke", key="bl_loaded"):
-                progress = st.progress(0)
-                msg = run_live_baseline("loaded", lambda i, t: progress.progress(i / t))
-                st.success(msg)
+                try:
+                    progress = st.progress(0)
+                    msg = run_live_baseline("loaded", lambda i, t: progress.progress(i / t))
+                    st.success(msg)
+                except Exception as e:
+                    st.error(f"Baseline stroke failed. Check BELIMO-X connection. ({e})")
             if st.button("Run Stall Test", key="bl_stall"):
-                progress = st.progress(0)
-                msg = run_live_baseline("stall", lambda i, t: progress.progress(i / t))
-                st.success(msg)
+                try:
+                    progress = st.progress(0)
+                    msg = run_live_baseline("stall", lambda i, t: progress.progress(i / t))
+                    st.success(msg)
+                except Exception as e:
+                    st.error(f"Baseline stroke failed. Check BELIMO-X connection. ({e})")
             st.divider()
             if st.button("Load Live Baseline", key="bl_load_live"):
-                profile, message = load_live_baseline()
-                if profile is not None:
-                    st.session_state["baseline_profile"] = profile
-                    st.session_state["baseline_source"] = "live"
-                    st.success(message)
-                else:
-                    st.warning(message)
+                try:
+                    profile, message = load_live_baseline()
+                    if profile is not None:
+                        st.session_state["baseline_profile"] = profile
+                        st.session_state["baseline_source"] = "live"
+                        st.success(message)
+                    else:
+                        st.warning(message)
+                except Exception as e:
+                    st.error(f"Could not load live baseline. Check BELIMO-X connection. ({e})")
         else:
             st.caption("Load certified baseline from local data.")
             if st.button("Load Replay Baseline", key="bl_load_replay"):
@@ -495,17 +513,23 @@ with tab3:
             with c1:
                 sp = st.slider("Setpoint (%)", 0, 100, 50, key="hs_sp")
                 if st.button("Send Step", key="hs_send"):
-                    send_setpoint(sp, int(tn))
-                    st.success(f"Sent {sp}%")
+                    try:
+                        send_setpoint(sp, int(tn))
+                        st.success(f"Sent {sp}%")
+                    except (ConnectionError, Exception) as e:
+                        st.error(f"Command failed: {e}")
             with c2:
                 if st.button("Run Full Stroke", key="hs_full"):
-                    progress = st.progress(0)
-                    result = run_live_health_test(int(tn), SEQ_FREE_STROKE,
-                                                  lambda i, t: progress.progress(i / t))
-                    if result.error:
-                        st.error(result.error)
-                    else:
-                        st.session_state["health_result"] = result
+                    try:
+                        progress = st.progress(0)
+                        result = run_live_health_test(int(tn), SEQ_FREE_STROKE,
+                                                      lambda i, t: progress.progress(i / t))
+                        if result.error:
+                            st.error(result.error)
+                        else:
+                            st.session_state["health_result"] = result
+                    except Exception as e:
+                        st.error(f"Health test failed. Check BELIMO-X connection. ({e})")
             if st.button("Score Existing Data", key="hs_compute"):
                 bp = st.session_state.get("baseline_profile")
                 if bp is None:
@@ -594,7 +618,11 @@ with tab3:
 
     if is_live:
         if st.button("Compute Fleet Scores", key="fleet_btn"):
-            fleet = compute_fleet_scores()
+            try:
+                fleet = compute_fleet_scores()
+            except Exception as e:
+                st.error(f"Fleet query failed. Check BELIMO-X connection. ({e})")
+                fleet = []
             if not fleet:
                 st.info("No field test data in last 24h.")
             else:
@@ -626,19 +654,25 @@ with tab4:
         if is_live:
             comm_tn = st.number_input("Test number (200–300)", 200, 300, 200, key="qa_tn")
             if st.button("Run Commissioning Stroke", key="qa_run"):
-                progress = st.progress(0)
-                result = run_live_commissioning(int(comm_tn), lambda i, t: progress.progress(i / t))
-                if result.error:
-                    st.error(result.error)
-                else:
-                    st.session_state["comm_result"] = result
-                    st.success("Commissioning complete.")
+                try:
+                    progress = st.progress(0)
+                    result = run_live_commissioning(int(comm_tn), lambda i, t: progress.progress(i / t))
+                    if result.error:
+                        st.error(result.error)
+                    else:
+                        st.session_state["comm_result"] = result
+                        st.success("Commissioning complete.")
+                except Exception as e:
+                    st.error(f"Commissioning failed. Check BELIMO-X connection. ({e})")
             if st.button("Evaluate Existing Data", key="qa_eval"):
-                result = evaluate_commissioning_from_test_number(int(comm_tn))
-                if result.error:
-                    st.warning(result.error)
-                else:
-                    st.session_state["comm_result"] = result
+                try:
+                    result = evaluate_commissioning_from_test_number(int(comm_tn))
+                    if result.error:
+                        st.warning(result.error)
+                    else:
+                        st.session_state["comm_result"] = result
+                except Exception as e:
+                    st.error(f"Evaluation failed. Check BELIMO-X connection. ({e})")
         else:
             if st.button("Analyze Replay Commissioning", key="qa_replay"):
                 result = run_replay_commissioning()

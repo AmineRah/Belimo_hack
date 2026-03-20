@@ -9,6 +9,7 @@ INFLUX_ORG = "belimo"
 INFLUX_BUCKET = "actuator-data"
 INFLUX_MEASUREMENT = "measurements"
 INFLUX_PROCESS = "_process"
+INFLUX_TIMEOUT_MS = 20000
 
 # ── Field names (must match InfluxDB schema) ─────────────────────────────────
 F_POSITION = "feedback_position_%"

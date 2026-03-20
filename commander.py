@@ -12,7 +12,7 @@ from influxdb_client.client.write_api import SYNCHRONOUS, WritePrecision
 
 from config import (
     INFLUX_URL, INFLUX_TOKEN, INFLUX_ORG, INFLUX_BUCKET,
-    INFLUX_PROCESS, SEQ_STEP_DELAY,
+    INFLUX_PROCESS, SEQ_STEP_DELAY, INFLUX_TIMEOUT_MS,
 )
 
 
@@ -29,6 +29,7 @@ def _get_write_api():
             token=INFLUX_TOKEN,
             org=INFLUX_ORG,
             verify_ssl=False,
+            timeout=INFLUX_TIMEOUT_MS,
         )
         _write_api = _client.write_api(write_options=SYNCHRONOUS)
     return _write_api

@@ -30,6 +30,17 @@ def load_baseline_from_file() -> pd.DataFrame:
 def baseline_profile_from_file() -> pd.Series:
     """Load baseline trace and return its torque profile."""
     df = load_baseline_from_file()
+    if df.empty:
+        raise ValueError(
+            "Certified baseline file is missing or empty. "
+            "Expected data/baseline_healthy.json."
+        )
+    required = {F_POSITION, F_TORQUE}
+    missing = [c for c in required if c not in df.columns]
+    if missing:
+        raise ValueError(
+            f"Certified baseline file is invalid; missing columns: {missing}"
+        )
     return torque_profile(df)
 
 

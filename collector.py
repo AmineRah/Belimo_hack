@@ -8,7 +8,7 @@ from influxdb_client import InfluxDBClient
 
 from config import (
     INFLUX_URL, INFLUX_TOKEN, INFLUX_ORG, INFLUX_BUCKET,
-    INFLUX_MEASUREMENT, REQUIRED_FIELDS,
+    INFLUX_MEASUREMENT, REQUIRED_FIELDS, INFLUX_TIMEOUT_MS,
 )
 
 
@@ -23,6 +23,7 @@ def _get_client() -> InfluxDBClient:
             token=INFLUX_TOKEN,
             org=INFLUX_ORG,
             verify_ssl=False,
+            timeout=INFLUX_TIMEOUT_MS,
         )
     return _client
 
@@ -70,7 +71,11 @@ from(bucket: "{INFLUX_BUCKET}")
 
 
 def query_by_test_number(test_number: int, range_str: str = "-24h") -> pd.DataFrame:
-    """Get telemetry for a specific test number. Returns empty DataFrame on connection error."""
+    """Get telemetry for a specific test number.
+
+    Returns an empty DataFrame when no rows match.
+    Raises ConnectionError when InfluxDB query fails.
+    """
     try:
         client = _get_client()
         flux = f'''
@@ -84,8 +89,34 @@ from(bucket: "{INFLUX_BUCKET}")
         df = client.query_api().query_data_frame(flux, org=INFLUX_ORG)
         return validate_trace(_clean_df(df))
     except Exception as e:
-        print(f"[collector] query_by_test_number({test_number}) failed: {e}")
-        return pd.DataFrame()
+        raise ConnectionError(
+            f"Failed to query InfluxDB for test_number={test_number}: {e}"
+        ) from e
+
+
+def count_by_test_number(test_number: int, range_str: str = "-1h") -> int:
+    """Count rows for a test_number without downloading the full DataFrame.
+
+    Returns 0 when InfluxDB is unreachable or no data exists.
+    """
+    try:
+        client = _get_client()
+        flux = f'''
+from(bucket: "{INFLUX_BUCKET}")
+  |> range(start: {range_str})
+  |> filter(fn: (r) => r["_measurement"] == "{INFLUX_MEASUREMENT}")
+  |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
+  |> filter(fn: (r) => r["test_number"] == {test_number})
+  |> count(column: "_time")
+'''
+        tables = client.query_api().query(flux, org=INFLUX_ORG)
+        for table in tables:
+            for record in table.records:
+                return int(record.get_value())
+        return 0
+    except Exception as e:
+        print(f"[collector] count_by_test_number({test_number}) failed: {e}")
+        return 0
 
 
 def query_all_test_numbers(range_str: str = "-24h") -> pd.DataFrame:

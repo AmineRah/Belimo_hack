@@ -10,13 +10,13 @@ from dataclasses import dataclass, field
 import pandas as pd
 
 from analyzer import torque_profile, health_score, health_diagnosis, commissioning_score
-from baseline import baseline_profile_from_file, baseline_profile_from_df
+from baseline import baseline_profile_from_file, baseline_profile_from_df, save_baseline
 from collector import query_by_test_number, query_all_test_numbers
 from commander import run_sequence, send_setpoint
 from fallback import load_replay, save_trace
 from config import (
     SEQ_FREE_STROKE, SEQ_LOADED_STROKE, SEQ_STALL_POSITION, SEQ_STALL_DURATION,
-    SEQ_STEP_DELAY, TN_BASELINE, TN_DEFAULT,
+    SEQ_STEP_DELAY, TN_BASELINE, TN_DEFAULT, TN_COMMISSION_MIN, TN_COMMISSION_MAX,
 )
 
 
@@ -48,6 +48,14 @@ def _guard():
             f"A run is already in progress (state: {_current_state}). "
             "Wait for it to finish before starting another."
         )
+
+
+# ── Telemetry collection ─────────────────────────────────────────────────────
+
+def _collect_trace(test_number: int, settle_s: float = 2.0) -> pd.DataFrame:
+    """Wait briefly for telemetry to settle, then query all rows for test_number."""
+    time.sleep(settle_s)
+    return query_by_test_number(test_number)
 
 
 @dataclass
@@ -104,13 +112,15 @@ def run_live_health_test(test_number: int, sequence: list[float] = None,
             _set_state(COMMANDING)
             run_sequence(sequence, test_number, delay=SEQ_STEP_DELAY,
                          progress_callback=progress_callback)
-            time.sleep(2)  # wait for last samples
 
         # Collect
         _set_state(COLLECTING)
-        result.trace = query_by_test_number(test_number)
+        result.trace = _collect_trace(test_number)
         if result.trace.empty:
-            result.error = f"No data found for test_number={test_number}"
+            result.error = (
+                f"No telemetry found for test_number={test_number}. "
+                "Check Influx connectivity and MP-Bus logger."
+            )
             _set_state(ERROR)
             return result
 
@@ -138,12 +148,14 @@ def run_live_commissioning(test_number: int, progress_callback=None) -> RunResul
         _set_state(COMMANDING)
         run_sequence(SEQ_FREE_STROKE, test_number, delay=SEQ_STEP_DELAY,
                      progress_callback=progress_callback)
-        time.sleep(2)
 
         _set_state(COLLECTING)
-        result.trace = query_by_test_number(test_number)
+        result.trace = _collect_trace(test_number)
         if result.trace.empty:
-            result.error = f"No data for test_number={test_number}"
+            result.error = (
+                f"No telemetry found for test_number={test_number}. "
+                "Check Influx connectivity and MP-Bus logger."
+            )
             _set_state(ERROR)
             return result
 
@@ -252,8 +264,9 @@ def load_live_baseline(test_number: int = TN_BASELINE,
             _set_state(IDLE)
             return None, f"No baseline data (test_number={test_number}). Run the tests first."
         profile = baseline_profile_from_df(df)
+        save_baseline(df)
         _set_state(DONE)
-        return profile, f"Loaded {len(df)} live baseline samples."
+        return profile, f"Loaded {len(df)} live baseline samples and saved to disk."
     except Exception as e:
         _set_state(ERROR)
         return None, f"Error loading live baseline: {e}"
@@ -271,20 +284,25 @@ def export_trace(result: RunResult, name: str) -> str:
 # ── Fleet analysis ───────────────────────────────────────────────────────────
 
 def compute_fleet_scores() -> list[dict]:
-    """Compute health scores for all test numbers in last 24h."""
+    """Compute health scores for all field test numbers in last 24h.
+
+    Excludes baseline (999), default (-1), and commissioning (200-300) test numbers.
+    """
     baseline = baseline_profile_from_file()
     df_all = query_all_test_numbers("-24h")
     if df_all.empty or "test_number" not in df_all.columns:
         return []
 
-    test_nums = df_all["test_number"].dropna().unique()
-    test_nums = sorted([int(t) for t in test_nums if int(t) not in (TN_DEFAULT, TN_BASELINE)])
+    # Filter out baseline, default, and commissioning test numbers
+    mask = df_all["test_number"].apply(
+        lambda t: int(t) not in (TN_DEFAULT, TN_BASELINE)
+        and not (TN_COMMISSION_MIN <= int(t) <= TN_COMMISSION_MAX)
+    )
+    field_df = df_all[mask]
+    if len(field_df) < 5:
+        return []
 
-    scores = []
-    for t in test_nums:
-        t_df = df_all[df_all["test_number"] == t]
-        if len(t_df) > 5:
-            prof = torque_profile(t_df)
-            s = health_score(baseline, prof)
-            scores.append({"test_number": t, "score": s})
-    return scores
+    # Single physical actuator — aggregate all test runs into one score
+    prof = torque_profile(field_df)
+    s = health_score(baseline, prof)
+    return [{"test_number": "Actuator", "score": round(s, 1)}]

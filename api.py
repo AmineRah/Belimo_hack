@@ -3,6 +3,8 @@ api.py — FastAPI backend for ActuSpec.
 Exposes all Python analysis/orchestration logic as REST endpoints.
 """
 
+import os
+import subprocess
 import traceback
 
 import numpy as np
@@ -90,6 +92,36 @@ def _run_result_to_dict(r: RunResult) -> dict:
         "error": r.error,
     }
     return result
+
+
+def _detect_network_name() -> str:
+    """Best-effort SSID detection on the backend host machine."""
+    env_name = os.getenv("BELIMO_NETWORK_NAME")
+    if env_name:
+        return env_name
+
+    try:
+        ssid = subprocess.check_output(["iwgetid", "-r"], text=True, timeout=2).strip()
+        if ssid:
+            return ssid
+    except Exception:
+        pass
+
+    try:
+        out = subprocess.check_output(
+            ["nmcli", "-t", "-f", "active,ssid", "dev", "wifi"],
+            text=True,
+            timeout=2,
+        )
+        for line in out.splitlines():
+            if line.startswith("yes:"):
+                ssid = line.split(":", 1)[1].strip()
+                if ssid:
+                    return ssid
+    except Exception:
+        pass
+
+    return "unknown"
 
 
 # ---------------------------------------------------------------------------
@@ -262,25 +294,44 @@ def api_fleet_scores():
 
 @app.get("/api/fleet/replay-scores")
 def api_fleet_replay_scores():
-    """Compute health scores for all replay scenarios against baseline."""
+    """Compute health scores for replay scenarios against baseline.
+
+    Generates a realistic demo fleet by applying deterministic noise
+    variations to the replay traces, producing a diverse fleet view.
+    """
     try:
         baseline = baseline_profile_from_file()
         scores = []
-        for scenario in ["healthy", "fault"]:
-            try:
-                trace = load_replay(scenario)
-                prof = torque_profile(trace)
-                s = health_score(baseline, prof)
-                scores.append({"test_number": scenario.title(), "score": round(s, 1)})
-            except Exception:
-                pass
+
+        # Build a realistic demo fleet with building zone names
+        # Each entry represents an actuator in a different zone
+        zone_scenarios = [
+            ("AHU-1 Supply", "healthy",  0.00,  0.0),   # pristine
+            ("AHU-1 Return", "healthy",  0.03,  0.3),   # near-healthy
+            ("AHU-2 Supply", "healthy",  0.06,  0.5),   # slight wear
+            ("FCU Room 201", "healthy",  0.10,  0.8),   # moderate wear
+            ("FCU Room 305", "fault",    0.00,  0.0),   # faulty unit
+            ("VAV Zone N",   "healthy",  0.02,  0.2),   # good
+            ("VAV Zone S",   "healthy",  0.15,  1.2),   # degraded
+            ("Chiller Bypass","healthy", 0.01,  0.1),   # near-perfect
+        ]
         try:
-            trace = load_replay("commissioning")
-            prof = torque_profile(trace)
-            s = health_score(baseline, prof)
-            scores.append({"test_number": "Commissioning", "score": round(s, 1)})
+            rng = np.random.RandomState(42)
+            for label, scenario, noise_level, bias in zone_scenarios:
+                try:
+                    trace = load_replay(scenario).copy()
+                    if noise_level > 0:
+                        noise = rng.normal(bias, noise_level * trace["motor_torque_Nmm"].mean(),
+                                           size=len(trace))
+                        trace["motor_torque_Nmm"] = trace["motor_torque_Nmm"] + noise
+                    prof = torque_profile(trace)
+                    s = health_score(baseline, prof)
+                    scores.append({"test_number": label, "score": round(s, 1)})
+                except Exception:
+                    pass
         except Exception:
             pass
+
         return {"scores": scores}
     except Exception as e:
         raise HTTPException(500, detail=str(e))
@@ -359,7 +410,9 @@ def api_config():
         DEFAULT_MODE,
         HEALTH_AMBER,
         HEALTH_GREEN,
+        INFLUX_URL,
         SEQ_FREE_STROKE,
+        SEQ_STEP_DELAY,
         TN_BASELINE,
         TN_COMMISSION_MAX,
         TN_COMMISSION_MIN,
@@ -379,7 +432,10 @@ def api_config():
         "tn_commission_max": TN_COMMISSION_MAX,
         "tn_default": TN_DEFAULT,
         "default_mode": DEFAULT_MODE,
+        "network_name": _detect_network_name(),
+        "influx_url": INFLUX_URL,
         "seq_free_stroke": SEQ_FREE_STROKE,
+        "seq_step_delay": SEQ_STEP_DELAY,
         "comm_thresholds": {
             "range": COMM_RANGE_THRESHOLD,
             "torque_cv": COMM_TORQUE_CV_THRESHOLD,
